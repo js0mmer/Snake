@@ -266,7 +266,7 @@ public class Screen extends JPanel implements Runnable {
 		}
 	}
 	}	
-	private long maxFrameRate = 50;
+	private long maxFrameRate = 60;
 	private int fps = 0;
 	
 	public void run() {
