@@ -1,37 +1,33 @@
-package net.jgsstudios.snake;
+package tk.jsommer.snake;
 
 import java.awt.Dimension;
 import javax.swing.JFrame;
 
-public class Frame extends JFrame{
+public class Frame extends JFrame {
 	
 	private static final long serialVersionUID = 1L;
 	public static int WIDTH;
 	public static int HEIGHT;
 	
-	public static void main(String[]args){
+	public static void main(String[] args) {
 		new Frame();
 	}
 	
-	public Frame(){
-		
-		this.setTitle("Snake - JGS Studios");
+	public Frame() {
+		this.setTitle("Snake");
 		this.setResizable(true);
 		this.setUndecorated(false);
 		this.setExtendedState(NORMAL);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setMaximumSize(new Dimension (1366, 720));
 		this.setMinimumSize(new Dimension (1366, 720));
-		this.setPreferredSize(new Dimension (1366, 720)); 
-		
-		
+		this.setPreferredSize(new Dimension (1366, 720));
 		this.setVisible(true);
 		
 		WIDTH = getWidth();
 		HEIGHT = getHeight();
 		
 		this.add(new Screen(this));
-		
 	}
 
 }
