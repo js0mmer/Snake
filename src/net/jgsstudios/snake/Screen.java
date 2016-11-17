@@ -41,7 +41,7 @@ public class Screen extends JPanel implements Runnable {
 	}
 
 	public void paintComponent(Graphics g) {
-		g.clearRect(0, 0, tk.jsommer.snake.Frame.WIDTH, tk.jsommer.snake.Frame.HEIGHT);
+		g.clearRect(0, 0, frame.WIDTH, frame.HEIGHT);
 
 		if(isInMenu) {
 			drawMenu(g);
