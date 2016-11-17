@@ -18,7 +18,7 @@ public class Screen extends JPanel implements Runnable {
 
 	private Food[] food;
 
-	private tk.jsommer.snake.Frame frame;
+	private Frame frame;
 	private Snake snake;
 
 	private Random random;
@@ -27,7 +27,7 @@ public class Screen extends JPanel implements Runnable {
 	private boolean isInMenu = true;
 
 
-	public Screen(tk.jsommer.snake.Frame frame) {
+	public Screen(Frame frame) {
 		this.random = new Random();
 		this.food = new Food[10];
 
@@ -52,7 +52,7 @@ public class Screen extends JPanel implements Runnable {
 					g.drawRect(snake.tail[i].x * snake.tailSize, snake.tail[i].y * snake.tailSize, snake.tailSize, snake.tailSize);
 
 					g.setColor(new Color(0, 136 + (i * 5 < (255 - 136) ? (i * 5) : (255 - 136)), 25));
-					g.fillRect(snake.tail[i].x * snake.tailSize + 1, snake.tail[i].y*snake.tailSize + 1, snake.tailSize - 1, snake.tailSize-1);
+					g.fillRect(snake.tail[i].x * snake.tailSize + 1, snake.tail[i].y * snake.tailSize + 1, snake.tailSize - 1, snake.tailSize-1);
 				}
 			}
 
